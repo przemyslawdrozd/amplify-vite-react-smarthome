@@ -4,6 +4,7 @@ backend:
     build:
       commands:
         - yarn install --cache-folder .yarn --prefer-offline
+        - yarn add aws-sdk @types/aws-sdk
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
