@@ -8,7 +8,9 @@ export const handler: APIGatewayProxyHandler = async (event) => {
     const payload = {
         state: {
             desired: {
-                led: "on"
+                camera: {
+                    take_snapshot: true
+                },
             }
         }
     };

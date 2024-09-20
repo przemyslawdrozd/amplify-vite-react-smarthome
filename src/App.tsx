@@ -17,7 +17,7 @@ function App() {
   }
 
   return (
-    <Authenticator>
+    <Authenticator hideSignUp={true}>
       {({ signOut }) => (
         <main>
           <h1>My Smarthome</h1>
