@@ -5,10 +5,6 @@ import { downloadData, list } from 'aws-amplify/storage';
 import { StorageImage } from '@aws-amplify/ui-react-storage';
 import { useState } from "react";
 
-const DefaultStorageImageExample = () => {
-  return ;
-};
-
 function App() {
   const [snapshotLists, setSnapshotLists] = useState<string[]>([])
 
