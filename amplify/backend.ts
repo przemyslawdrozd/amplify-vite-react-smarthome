@@ -12,9 +12,12 @@ import { Policy, PolicyStatement } from "aws-cdk-lib/aws-iam";
 
 import {publishShadow} from './functions/publish-shadow/resource';
 
+import { storage } from './storage/resource';
+
 const backend = defineBackend({
   auth,
-  publishShadow
+  publishShadow,
+  storage
 });
 
 const apiStack = backend.createStack("api-stack");
